@@ -1,5 +1,12 @@
 <!--pages/mine/components/companyItem/index.wxml-->
-<view>
-  <text bindtap="handleClick">{{item.name}}</text>
-  <i-toast id="toast" />
+<view class="companyItem">
+  <image class="bg" src="../../../../assets/images/companyBg.png"></image>
+  <view class="content">
+    <view>{{item.name}}</view>
+    <view>{{item.name}}</view>
+    <view>
+      <image src="../../../../assets/svg/time.svg"></image>报表最后更新时间：
+      {{item.time}}
+    </view>
+  </view>
 </view>

@@ -1,8 +1,45 @@
 <!--pages/mine/mine.wxml-->
-<view>
-  {{nickName}}
-  <view class="companyItemBox">
-    <company-item wx:for="{{companyList}}" wx:for-item="item" item="{{item}}" wx:key="id"></company-item>  
+<view class="mine">
+  <view class="leyou-bg">
+    <image src="../../assets/images/mine.png"/>
   </view>
-  
+  <view class="leyou-wrapper">
+    <view class="leyou-content">
+      <view class="baseInfo">
+        <view class="baseInfo-top">
+          <image src="{{avatar}}"></image>
+          <view class="baseInfo-name-box">
+            <view>{{nickName}}</view>
+            <view>
+              我的合同：x份 <image src="../../assets/images/arrow-right.png"></image>
+            </view>
+          </view>
+          <view class="baseInfo-money">
+            <image src="../../assets/svg/beans.svg"></image>
+            <view class="money-count">2606.00</view>
+          </view>
+        </view>
+        <view class="baseInfo-btn">
+          <view class="baseInfo-order">
+            <image src="../../assets/svg/orderServe.svg"></image>
+            <view class="order-text">
+              <view>服务订单：</view>
+              <view>6</view>
+            </view>
+          </view>
+          <view class="line"></view>
+          <view class="baseInfo-order">
+            <image src="../../assets/svg/orderFund.svg"></image>
+            <view class="order-text">
+              <view>商品订单：</view>
+              <view>8</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="companyBox">
+        <company-item wx:for="{{companyList}}" wx:for-item="item" item="{{item}}" wx:key="item.id"></company-item>
+      </view>
+    </view>
+  </view>
 </view>
