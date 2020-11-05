@@ -1,0 +1,5 @@
+<!--pages/mine/components/companyItem/index.wxml-->
+<view>
+  <text bindtap="handleClick">{{item.name}}</text>
+  <i-toast id="toast" />
+</view>

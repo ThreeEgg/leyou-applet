@@ -1,0 +1,8 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  {{nickName}}
+  <view class="companyItemBox">
+    <company-item wx:for="{{companyList}}" wx:for-item="item" item="{{item}}" wx:key="id"></company-item>  
+  </view>
+  
+</view>
